@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black">#FF000000</color>
+	<color name="white">#FFFFFFFF</color>
+
+	<color name="lawnGreen">#84ED0A</color>
+	<color name="darkDimGray">#27292D</color>
+	<color name="dimGray">#878787</color>
+	<color name="gray">#C6C6C6</color>
+
+	<color name="backgroundAppLight">@color/white</color>
+	<color name="backgroundAppNight">#616161</color>
+	<color name="backgroundExitFrg">@android:color/transparent</color>
+	<color name="attentionColor">#FF4D00</color>
+</resources>

@@ -1,0 +1,6 @@
+package com.example.unsplash.presentation.fragment_collections.pagination
+
+import com.example.unsplash.presentation._common.interfaces.LocalPagerFactory
+import com.example.unsplash.presentation.fragment_collections.models.PhotosCollection
+
+interface CollectionsLocalPagerFactory : LocalPagerFactory<PhotosCollection>

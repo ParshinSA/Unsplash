@@ -1,0 +1,75 @@
+<resources>
+	<!--	Common strings	-->
+	<string name="app_name">Unsplash</string>
+	<string name="connection_is_lost">No internet connection</string>
+	<string name="connection_is_restored">Connection restored</string>
+	<string name="failed_to_display_data">Failed to display data</string>
+	<string name="open_location_went_wrong">Something went wrong when opening the location</string>
+	<string name="send_url_went_wrong">Something went wrong when sending the URL</string>
+	<string name="load_started">Loading is started</string>
+	<string name="load_completed">Loading is complete</string>
+	<string name="here_is_empty">There\'s nothing here yet</string>
+	<string name="no_results">No results found</string>
+	<string name="occur_error_for_load_data">Having problems loading data</string>
+	<string name="need_access_to_device_location">Need access to device location</string>
+	<string name="need_access_to_external_storage">Need access to external storage</string>
+	<string name="name_download_channel">Downloads</string>
+	<string name="description_download_channel">Loading images</string>
+	<string name="ok" >OK</string>
+	<string name="share_photo">Share photo</string>
+	<string name="failed_to_open_photo">Failed to open photo</string>
+	<string name="failed_to_get_user_location">Failed to get user location</string>
+	<string name="failed_to_start_loading">Failed to start loading</string>
+
+	<!--	Content description		-->
+	<string name="content_desc_close">Close</string>
+	<string name="content_desc_location">Location</string>
+	<string name="content_desc_show_hide_info">Show/open information</string>
+	<string name="content_desc_download">Download</string>
+	<string name="content_desc_like">Like</string>
+	<string name="content_desc_refresh_photo_list">Restart photo search</string>
+
+	<!--	Screen Exit		-->
+	<string name="exit_alert_logout">Are you sure you want to go out? All local data will be deleted</string>
+	<string name="exit_alert_close_app">Are you sure you want to close the application?</string>
+	<string name="title_exit_close_app">Close?</string>
+	<string name="title_exit_logout">Exit?</string>
+	<string name="btn_close">Close</string>
+	<string name="btn_logout">Exit</string>
+	<string name="btn_cancel">Cancel</string>
+
+	<!--	Screen Onboarding	-->
+	<string name="go">Let\'s go!</string>
+	<string name="view_photos_and_collections">Browse photos and collections</string>
+	<string name="search_photos_share_friends">Find what you like, share with friends</string>
+	<string name="view_photo_location">Photo locations</string>
+	<string name="two_color_theme">Use a dark or light theme</string>
+	<string name="skip">Skip</string>
+	<string name="hello">Hello!</string>
+	<string name="next">Next</string>
+
+	<!--	Screen Login	-->
+	<string name="login_via">Login via %1$s</string>
+	<string name="app_auth_success">Authorization was successful</string>
+	<string name="app_auth_failed">Connection restored</string>
+
+	<!--	Screen Navigation	-->
+	<string name="photos">Photos</string>
+	<string name="collections">Collections</string>
+	<string name="profile">Profile</string>
+
+	<!--	Screen DetailsPhoto	-->
+	<string name="transition_name_details">trNameDetails</string>
+	<string name="details">Details</string>
+
+	<!--	Screen photo list	-->
+	<string name="search_photos">Photo search</string>
+	<string name="enter_query">Enter query</string>
+
+	<!--	Screens from collection-->
+	<string name="from_collection">From collection %1$s</string>
+
+	<!--	Screen liked photos -->
+	<string name="your_favorites">Your favorites</string>
+
+</resources>

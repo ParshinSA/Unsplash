@@ -1,0 +1,75 @@
+<resources>
+	<!--	Common strings	-->
+	<string name="app_name">Unsplash</string>
+	<string name="connection_is_lost">Нет соединения с интернетом</string>
+	<string name="connection_is_restored">Соединение восстановлено</string>
+	<string name="failed_to_display_data">Не удалось отобразить данные</string>
+	<string name="open_location_went_wrong">Что-то пошло не так, при открытии локации</string>
+	<string name="send_url_went_wrong">Что-то пошло не так, при отправке URL</string>
+	<string name="load_started">Загрузка началась</string>
+	<string name="load_completed">Загрузка завершена</string>
+	<string name="here_is_empty">Здесь ещё ничего нет</string>
+	<string name="no_results">Результатов не найдено</string>
+	<string name="occur_error_for_load_data">Возникли проблемы при загрузке данных</string>
+	<string name="need_access_to_device_location">Необходим доступ к местоположению устройства</string>
+	<string name="need_access_to_external_storage">Необходим доступ к внешнему хранилищу</string>
+	<string name="name_download_channel">Загрузки</string>
+	<string name="description_download_channel">Загрузка изображений</string>
+	<string name="ok">OK</string>
+	<string name="share_photo">Поделиться фотографией</string>
+	<string name="failed_to_open_photo">Не удалось открыть фото</string>
+	<string name="failed_to_get_user_location">Не удалось получить местоположение пользователя</string>
+	<string name="failed_to_start_loading">Не удалось начать загрузку</string>
+
+	<!--	Content description		-->
+	<string name="content_desc_close">Закрыть</string>
+	<string name="content_desc_location">Локация</string>
+	<string name="content_desc_show_hide_info">Показать/скрыть инормацию</string>
+	<string name="content_desc_download">Скачать</string>
+	<string name="content_desc_like">Лайк</string>
+	<string name="content_desc_refresh_photo_list">Перезагрузить список фотографий</string>
+
+	<!--	Screen Exit		-->
+	<string name="exit_alert_close_app">Вы уверены, что хотите закрыть приложение?</string>
+	<string name="exit_alert_logout">Вы уверены, что хотите выйти? Все локальные данные будут удалены.</string>
+	<string name="title_exit_close_app">Закрыть приложение?</string>
+	<string name="title_exit_logout">Выйти из профиля?</string>
+	<string name="btn_close">Закрыть</string>
+	<string name="btn_logout">Выход</string>
+	<string name="btn_cancel">Отмена</string>
+
+	<!--	Screen Onboarding	-->
+	<string name="go">Погнали!</string>
+	<string name="view_photos_and_collections">Просматривайте фотографии и коллекции</string>
+	<string name="search_photos_share_friends">Ищите то что Вам по вкусу, делитесь с друзьями</string>
+	<string name="view_photo_location">Локации фотографий</string>
+	<string name="two_color_theme">Используйте темную или светлую тему</string>
+	<string name="skip">Пропустить</string>
+	<string name="hello">Привет!</string>
+	<string name="next">Следующий</string>
+
+	<!--	Screen Login	-->
+	<string name="login_via">Войти через %1$s</string>
+	<string name="app_auth_success">Авторизация прошла успешно</string>
+	<string name="app_auth_failed">Авторизация не завершена</string>
+
+	<!--	Screen Navigation	-->
+	<string name="photos">Фотографии</string>
+	<string name="collections">Коллекции</string>
+	<string name="profile">Профиль</string>
+
+	<!--	Screen DetailsPhoto	-->
+	<string name="transition_name_details">trNameDetails</string>
+	<string name="details">Детали</string>
+
+	<!--	Screen photo list -->
+	<string name="search_photos">Поиск фотографий</string>
+	<string name="enter_query">Введите запрос</string>
+
+	<!--	Screens from collection	-->
+	<string name="from_collection">Из коллекции %1$s</string>
+
+	<!--	Screen liked photos -->
+	<string name="your_favorites">Ваши предпочтения</string>
+
+</resources>

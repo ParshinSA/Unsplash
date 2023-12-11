@@ -1,0 +1,9 @@
+<resources>
+	<!-- Application theme. -->
+	<style name="Theme.Unsplash" parent="Base.Theme.Unsplash">
+
+		<!--		Common style	-->
+		<item name="colorPrimaryVariant">@color/dimGray</item>
+	</style>
+
+</resources>

@@ -1,0 +1,6 @@
+package com.example.unsplash.presentation.fragment_collections.pagination
+
+import com.example.unsplash.presentation._common.interfaces.RemotePagerFactory
+import com.example.unsplash.presentation.fragment_collections.models.PhotosCollection
+
+interface CollectionsRemotePagerFactory : RemotePagerFactory<PhotosCollection>

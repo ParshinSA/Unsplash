@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/detailsContainer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="?attr/colorPrimaryVariant"
+	android:transitionName="@string/transition_name_details">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		style="@style/style_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		app:menu="@menu/toolbar_menu_details_fragment"
+		app:navigationIcon="@drawable/ic_arrow_back"
+		app:title="@string/details" />
+
+	<ImageView
+		android:id="@+id/ivImagePhotoOriginal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/toolbar"
+		android:scaleType="centerCrop"
+		tools:ignore="ContentDescription" />
+
+	<ImageView
+		android:id="@+id/ivImagePhotoBlur"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/toolbar"
+		android:scaleType="centerCrop"
+		tools:ignore="ContentDescription" />
+
+	<FrameLayout
+		android:id="@+id/fmlInfoContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:alpha="@dimen/alphaBgInfoImagePhoto"
+			android:background="@color/black"
+			tools:ignore="ContentDescription" />
+
+		<RelativeLayout
+			android:id="@+id/testCont"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="24dp">
+
+			<com.google.android.material.imageview.ShapeableImageView
+				android:id="@+id/ivImageProfile"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginBottom="16dp"
+				android:scaleType="centerCrop"
+				app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlayCorner50"
+				tools:src="@drawable/ic_logo_unsplash" />
+
+			<TextView
+				android:id="@+id/tvPhotographerName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@+id/ivImageProfile"
+				android:layout_alignBottom="@+id/ivImageProfile"
+				android:layout_marginStart="@dimen/marginPhotoInfo"
+				android:layout_toEndOf="@+id/ivImageProfile"
+				android:gravity="center"
+				android:maxEms="10"
+				android:textColor="@color/white"
+				android:textSize="18sp"
+				tools:ignore="RelativeOverlap"
+				tools:text="NormalName" />
+
+			<TextView
+				android:id="@+id/tvPhotographerInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/ivImageProfile"
+				android:textColor="@color/white" />
+
+			<TextView
+				android:id="@+id/tvLikesCounter"
+				style="@style/style_actions_counter"
+				android:layout_alignTop="@+id/imBtnImageLike"
+				android:layout_alignBottom="@+id/imBtnImageLike"
+				android:layout_toStartOf="@+id/imBtnImageLike"
+				android:textColor="@color/white"
+				tools:text="245" />
+
+			<ImageButton
+				android:id="@+id/imBtnImageLike"
+				style="@style/style_like_btn"
+				android:layout_alignTop="@+id/ivImageProfile"
+				android:layout_alignBottom="@+id/ivImageProfile"
+				android:layout_alignParentEnd="true"
+				android:contentDescription="@string/content_desc_like"
+				tools:src="@drawable/ic_like_true" />
+
+			<TextView
+				android:id="@+id/tvCommonInfo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tvPhotographerInfo"
+				android:layout_marginTop="8dp"
+				android:textColor="@color/white" />
+
+			<ImageButton
+				android:id="@+id/imBtnChangeStateInfo"
+				style="@style/style_transparent_btn"
+				android:layout_alignTop="@+id/imBtnDownload"
+				android:contentDescription="@string/content_desc_show_hide_info"
+				android:src="@drawable/ic_arrow_down" />
+
+			<TextView
+				android:id="@+id/tvDownloadCounter"
+				style="@style/style_actions_counter"
+				android:layout_alignTop="@+id/imBtnDownload"
+				android:layout_alignBottom="@+id/imBtnDownload"
+				android:layout_toStartOf="@+id/imBtnDownload"
+				android:textColor="@color/white"
+				tools:text="1325" />
+
+			<ImageButton
+				android:id="@+id/imBtnDownload"
+				style="@style/style_transparent_btn"
+				android:layout_below="@+id/tvCommonInfo"
+				android:layout_alignParentEnd="true"
+				android:layout_marginTop="16dp"
+				android:contentDescription="@string/content_desc_download"
+				android:src="@drawable/ic_download"
+				android:visibility="invisible" />
+
+			<ProgressBar
+				android:id="@+id/progressDownload"
+				android:layout_width="@dimen/normalImageBtnSize"
+				android:layout_height="@dimen/normalImageBtnSize"
+				android:layout_below="@+id/tvCommonInfo"
+				android:layout_alignParentEnd="true"
+				android:layout_marginTop="16dp"
+				android:indeterminateTint="@color/lawnGreen" />
+
+			<ImageButton
+				android:id="@+id/imBtnLocation"
+				style="@style/style_transparent_btn"
+				android:layout_alignTop="@+id/imBtnDownload"
+				android:layout_marginStart="16dp"
+				android:layout_toEndOf="@+id/imBtnChangeStateInfo"
+				android:contentDescription="@string/content_desc_location"
+				android:src="@drawable/ic_map" />
+
+		</RelativeLayout>
+	</FrameLayout>
+
+</RelativeLayout>

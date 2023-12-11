@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="Widget.V21.Unsplash.ToolbarNotNight" parent="Widget.MaterialComponents.Toolbar">
+		<item name="android:background">@color/lawnGreen</item>
+		<item name="titleTextColor">@color/darkDimGray</item>
+	</style>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="Base.Theme.Unsplash" parent="BaseNoNight.V21.Theme.Unsplash" />
+
+	<!--	BaseNotNight -->
+	<style name="BaseNoNight.V21.Theme.Unsplash" parent="Theme.MaterialComponents.Light.NoActionBar">
+		<!-- Primary brand color. -->
+		<item name="colorPrimary">@color/lawnGreen</item>
+		<item name="colorOnPrimary">@color/darkDimGray</item>
+		<!-- Secondary brand color. -->
+		<item name="colorSecondary">@color/lawnGreen</item>
+		<item name="colorSecondaryVariant">@color/lawnGreen</item>
+		<item name="colorOnSecondary">@color/darkDimGray</item>
+		<!-- Status bar color. -->
+		<item name="android:statusBarColor">?attr/colorPrimary</item>
+
+		<!-- Customize BaseNotNight. -->
+		<item name="android:windowBackground">@color/backgroundAppLight</item>
+		<item name="toolbarStyle">@style/Widget.V21.Unsplash.ToolbarNotNight</item>
+		<item name="android:textColor">@color/black</item>
+	</style>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/cardVPhotoContainer"
+	android:layout_width="match_parent"
+	android:layout_height="275dp"
+	android:layout_margin="4dp"
+	android:backgroundTint="?attr/colorPrimaryVariant"
+	android:clipChildren="false"
+	app:cardCornerRadius="@dimen/cornerSizeItemRvPhoto">
+
+	<ImageView
+		android:id="@+id/ivPlaceholder"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:rotation="45"
+		android:scaleType="centerCrop"
+		android:src="@drawable/placeholder_photos_frg"
+		tools:ignore="ContentDescription" />
+
+	<ImageView
+		android:id="@+id/ivImagePhoto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true"
+		android:focusable="true"
+		android:scaleType="centerCrop"
+		tools:ignore="ContentDescription" />
+
+	<FrameLayout
+		android:id="@+id/fmlInfoContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:alpha="@dimen/alphaBgInfoImagePhoto"
+			android:background="@color/black"
+			tools:ignore="ContentDescription" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp">
+
+			<com.google.android.material.imageview.ShapeableImageView
+				android:id="@+id/ivImageProfile"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_alignParentStart="true"
+				android:layout_alignParentTop="true"
+				android:scaleType="centerCrop"
+				app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlayCorner50"
+				tools:src="@drawable/ic_logo_unsplash" />
+
+			<TextView
+				android:id="@+id/tvPhotographerName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@+id/ivImageProfile"
+				android:layout_alignBottom="@+id/ivImageProfile"
+				android:layout_marginStart="@dimen/marginPhotoInfo"
+				android:layout_toEndOf="@+id/ivImageProfile"
+				android:gravity="center_vertical"
+				android:maxEms="5"
+				android:maxLines="2"
+				android:textColor="@color/white"
+				android:textSize="@dimen/textSizeInfo"
+				tools:ignore="RelativeOverlap"
+				tools:text="NormalName" />
+
+			<TextView
+				android:id="@+id/tvLikesCounter"
+				style="@style/style_actions_counter"
+				android:layout_alignTop="@+id/imBtnImageLike"
+				android:layout_alignBottom="@+id/imBtnImageLike"
+				android:layout_toStartOf="@+id/imBtnImageLike"
+				android:textColor="@color/white"
+				tools:text="245" />
+
+			<ImageButton
+				android:id="@+id/imBtnImageLike"
+				style="@style/style_like_btn"
+				android:layout_alignTop="@+id/tvPhotographerName"
+				android:layout_alignParentEnd="true"
+				android:contentDescription="@string/content_desc_like"
+				tools:src="@drawable/ic_like_true" />
+
+		</RelativeLayout>
+	</FrameLayout>
+
+	<RelativeLayout
+		android:id="@+id/loaderDetailedInfo"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="invisible">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:alpha="0.4"
+			android:background="?attr/colorPrimary"
+			tools:ignore="ContentDescription" />
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:elevation="8dp"
+			android:indeterminateTint="?attr/colorOnPrimary" />
+	</RelativeLayout>
+</androidx.cardview.widget.CardView>

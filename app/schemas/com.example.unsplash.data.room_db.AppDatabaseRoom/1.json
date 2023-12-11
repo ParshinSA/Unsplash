@@ -1,0 +1,134 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "7be0a15331532e4c175bb1bd00d74f60",
+    "entities": [
+      {
+        "tableName": "PhotoEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`image_ID` TEXT NOT NULL, `counter_likes` TEXT NOT NULL, `photo_url` TEXT NOT NULL, `photographer_name` TEXT NOT NULL, `photographer_photo_profile` TEXT NOT NULL, `like_by_user` INTEGER NOT NULL, PRIMARY KEY(`image_ID`))",
+        "fields": [
+          {
+            "fieldPath": "photoID",
+            "columnName": "image_ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "counterLikes",
+            "columnName": "counter_likes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "urlImagePhoto",
+            "columnName": "photo_url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photographerName",
+            "columnName": "photographer_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "urlPhotoPhotographerProfile",
+            "columnName": "photographer_photo_profile",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "likedByUser",
+            "columnName": "like_by_user",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "image_ID"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "LoadingPhotoEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`load_ID` INTEGER NOT NULL, `photo_ID` TEXT NOT NULL, `url_to_preview` TEXT NOT NULL, PRIMARY KEY(`load_ID`))",
+        "fields": [
+          {
+            "fieldPath": "loadId",
+            "columnName": "load_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photoId",
+            "columnName": "photo_ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "urlToPreview",
+            "columnName": "url_to_preview",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "load_ID"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "PhotosCollectionsEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`COLLECTION_ID` TEXT NOT NULL, `TITLE` TEXT NOT NULL, `COMMON_INFO` TEXT NOT NULL, `LIST_PREVIEW_PHOTOS` TEXT NOT NULL, PRIMARY KEY(`COLLECTION_ID`))",
+        "fields": [
+          {
+            "fieldPath": "collectionId",
+            "columnName": "COLLECTION_ID",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "TITLE",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "commonInfo",
+            "columnName": "COMMON_INFO",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "previewPhotos",
+            "columnName": "LIST_PREVIEW_PHOTOS",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "COLLECTION_ID"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7be0a15331532e4c175bb1bd00d74f60')"
+    ]
+  }
+}

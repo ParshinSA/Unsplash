@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="ShapeAppearanceOverlayCorner50">
+		<item name="cornerSize">50%</item>
+	</style>
+
+	<style name="style_transparent_btn">
+		<item name="android:layout_height">@dimen/normalImageBtnSize</item>
+		<item name="android:layout_width">@dimen/normalImageBtnSize</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:tint">@color/selector_transparent_btn</item>
+		<item name="android:scaleType">center</item>
+	</style>
+
+	<style name="style_like_btn">
+		<item name="android:layout_height">@dimen/normalImageBtnSize</item>
+		<item name="android:layout_width">@dimen/normalImageBtnSize</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:tint">@color/attentionColor</item>
+		<item name="android:scaleType">center</item>
+	</style>
+
+	<style name="style_actions_counter">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginEnd">8dp</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">@dimen/textSizeInfo</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="style_toolbar">
+		<item name="titleTextColor">?attr/colorOnPrimary</item>
+		<item name="theme">@style/theme_toolbar</item>
+	</style>
+
+	<style name="theme_toolbar">
+		<item name="colorControlNormal">?attr/colorOnPrimary</item>
+		<item name="colorAccent">?attr/colorOnPrimary</item>
+		<item name="tint">?attr/colorOnPrimary</item>
+	</style>
+
+</resources>
